@@ -1,4 +1,6 @@
 import Phaser from "phaser";
+import loadingBarD from '../assets/menu/loadingBarD.png'
+import logo from '../assets/menu/logo.png'
 
 class Boot extends Phaser.Scene {
   constructor() {
@@ -8,8 +10,8 @@ class Boot extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("logo", "../assets/menu/logo.png");
-    this.load.image("loadingBar", "../assets/menu/loadingBarD.png");
+    this.load.image("logo", logo);
+    this.load.image("loadingBar", loadingBarD);
   }
 
   create() {

@@ -1,6 +1,5 @@
-import Phaser from "phaser";
-
 import Button from "./UI/Button";
+import Phaser from "phaser";
 
 class MainMenu extends Phaser.Scene {
   constructor() {

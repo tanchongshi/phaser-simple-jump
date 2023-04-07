@@ -8,6 +8,8 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
+    "parcel-plugin-clean-easy": "^1.0.2",
+    "parcel-plugin-static-files-copy": "^2.6.0",
     "phaser": "3.55.2",
     "phaser3-nineslice": "0.5.0"
   },
@@ -15,5 +17,17 @@
     "@babel/core": "7.2.0",
     "parcel-bundler": "^1.6.1"
   },
-  "keywords": []
+  "keywords": [],
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "assets",
+        "staticOutDir": "assets"
+      }
+    ],
+    "watcherGlob": "**"
+  },
+  "parcelCleanPaths": [
+    "dist"
+  ]
 }
